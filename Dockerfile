@@ -8,7 +8,7 @@ RUN apt-get upgrade -y
 #might need this
 #RUN export DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get install -y openssh-server supervisor node.js nano git
+RUN apt-get install -y openssh-server supervisor nodejs npm nano git
 
 RUN mkdir -p /var/run/sshd
 RUN mkdir -p /var/log/supervisor
