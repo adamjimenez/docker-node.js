@@ -20,7 +20,7 @@ chmod 700 /home/ubuntu/.ssh/id_rsa
 if [ -n "$GIT_URL" ]; then
   # Clone the conf files into the docker container
   rm -f /home/ubuntu/workspace/*
-  git clone $GIT_URL /home/ubuntu/workspace
+  sudo -u ubuntu git clone $GIT_URL /home/ubuntu/workspace
   chown -R ubuntu:ubuntu /home/ubuntu/workspace
 fi
 
